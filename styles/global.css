@@ -26,7 +26,8 @@
 */
 
 :root{
-    --blanco: rgb(255, 255, 255);
+    /*--blanco: rgb(255, 255, 255);*/
+    --blanco: #faf6f1;
     --negro: rgb(30, 30, 30);
     --grisClaro: rgb(108, 108, 108);
 }

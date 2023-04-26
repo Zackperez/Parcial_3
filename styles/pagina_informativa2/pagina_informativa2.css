@@ -1,0 +1,172 @@
+@import url(../global.css);
+
+
+/* CONTENIDO MENU */
+
+.menu {
+    display: grid;
+    height: 10vh;
+}
+
+.menu-contenedor {
+    display: grid;
+    grid-template-areas:
+        "titulo enlaces";
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 12vw;
+    margin-right: 12vw;
+}
+
+.menu-titulo {
+    grid-area: titulo;
+}
+
+.menu-contenedor .menu-titulo .menu__titulo {
+    font-size: 1.8vw;
+    font-weight: bold;
+}
+
+.menu-lista {
+    grid-area: enlaces;
+}
+
+.menu-contenedor .menu-lista {
+    display: flex;
+}
+
+.menu-contenedor .menu-lista .menu__item a {
+    font-size: 1.2vw;
+    margin-left: 2vw;
+    color: var(--negro);
+}
+
+.menu__item--active a {
+    font-weight: bold;
+    border-bottom: 1px solid var(--negro);
+}
+
+.pagina-principal{
+    margin-top: 5vh;
+    margin-right: 10vw;
+    margin-left: 10vw;
+}
+
+/* CONTENIDO REDES */
+
+.footer {
+    display: grid;
+    align-items: center;
+    height: 20vh;
+    background-color: var(--negroOscuro);
+}
+
+.contenido-redes {
+    padding: 0 5vw;
+    display: grid;
+    justify-items: center;
+    row-gap: 1vw;
+}
+
+.redes-tarjetas {
+    display: flex;
+    justify-content: center;
+    column-gap: 1vw;
+}
+
+.redes-texto p {
+    font-size: 0.9vw;
+}
+
+.redes-texto a {
+    color: var(--grisClaro);
+}
+
+.redes-tarjetas .tarjeta {
+    display: grid;
+    column-gap: 5vw;
+    align-items: center;
+}
+
+.redes-tarjetas .tarjeta-icono i {
+    font-size: 1.7vw;
+    color: var(--blanco);
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    /* CONTENIDO MENU */
+    .menu {
+        height: 20vh;
+    }
+
+    .menu-contenedor {
+        display: grid;
+        grid-template-areas:
+            "titulo"
+            "enlaces";
+        margin-left: 5vw;
+        row-gap: 0vh;
+    }
+
+    .menu-contenedor .menu-titulo .menu__titulo {
+        font-size: 8vw;
+    }
+
+    .menu-contenedor .menu-lista .menu__item a {
+        font-size: 5vw;
+        margin-left: 3vw;
+    }
+
+    /* CONTENIDO PRINCIPAL */
+
+    .principal-grilla {
+        display: grid;
+        justify-content: center;
+        margin-top: 5vh;
+        margin-right: 5vw;
+        margin-left: 5vw;
+    }
+
+    
+    .pagina-principal {
+        margin-right: 5vw;
+        margin-left: 5vw;
+        margin-bottom: 5vh;
+    }
+
+    /* CONTENIDO REDES */
+
+    .footer {
+        display: grid;
+        align-items: center;
+        height: 20vh;
+        background-color: #191919;
+    }
+
+    .contenido-redes {
+        padding: 0;
+        row-gap: 3vh;
+    }
+
+    .redes-tarjetas {
+        display: flex;
+        justify-content: center;
+        column-gap: 5vw;
+    }
+
+    .redes-tarjetas .tarjeta {
+        display: grid;
+        align-items: center;
+    }
+
+    .redes-tarjetas .tarjeta-icono i {
+        font-size: 8vw;
+        color: aliceblue;
+    }
+
+    .redes-texto p {
+        font-size: 3.5vw;
+    }
+}
