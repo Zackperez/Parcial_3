@@ -5,10 +5,10 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
 }
 
-:root{
+/* :root{
     --blanco: #FBF9FF;
     --negro: #121212;
     --negroOscuro: #323133;
@@ -22,4 +22,11 @@
     --celesteOscuro: #7DB1B1;
     --celesteClaro: #A0CECB;
 
+}
+*/
+
+:root{
+    --blanco: rgb(255, 255, 255);
+    --negro: rgb(30, 30, 30);
+    --grisClaro: rgb(108, 108, 108);
 }
