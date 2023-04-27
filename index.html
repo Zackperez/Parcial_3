@@ -9,168 +9,122 @@
 </head>
 <body>
 
-    <header class="menu">
-        <nav class="menu-contenedor">
-            <div class="menu-titulo">
-                <p class="menu__titulo">Cancer de mama</p>
-            </div>
-            <ul class="menu-lista">
-                <li class="menu__item menu__item--active"><a href="">Inicio</a></li>
-                <li class="menu__item"><a href="#proyectos">Proyectos</a></li>
-                <li class="menu__item"><a href="paginas/contacto.html">Contáctame</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="pagina-principal">
-
-        <div class="principal-grilla">
-            <div class="disclaimer">
-                <h2>Citation Request:</h2>
-                <p>This breast cancer domain was obtained from the University Medical Centre,
-                    Institute of Oncology, Ljubljana, Yugoslavia.  Thanks go to M. Zwitter and 
-                    M. Soklic for providing the data.  Please include this citation if you plan
-                    to use this database.</p>
-            </div>
-            <ol class="lista">
-                <li>
-                    <h3>Title:</h3>
-                    <p>Breast cancer data (Michalski has used this)</p>
-                </li>
-                <li>
-                    <h3>Sources:</h3>
-                    <li>-- Matjaz Zwitter & Milan Soklic (physicians)
-                        Institute of Oncology 
-                        University Medical Center
-                        Ljubljana, Yugoslavia</li>
-                    <li>-- Donors: Ming Tan and Jeff Schlimmer (Jeffrey.Schlimmer@a.gp.cs.cmu.edu)</li>
-                    <li>-- Date: 11 July 1988</li>
-                </li>
-                <li>
-                    <h3>Past Usage: (Several: here are some)</h3>
-                    <li>     -- Michalski,R.S., Mozetic,I., Hong,J., & Lavrac,N. (1986). The 
-                        Multi-Purpose Incremental Learning System AQ15 and its Testing 
-                        Application to Three Medical Domains.  In Proceedings of the 
-                        Fifth National Conference on Artificial Intelligence, 1041-1045,
-                        Philadelphia, PA: Morgan Kaufmann. <br> <li>-- accuracy range: 66%-72%</li></li>
-                    <li>     -- Clark,P. & Niblett,T. (1987). Induction in Noisy Domains.  In 
-                        Progress in Machine Learning (from the Proceedings of the 2nd
-                        European Working Session on Learning), 11-30, Bled, 
-                        Yugoslavia: Sigma Press. <br> <li>-- 8 test results given: 65%-72% accuracy range</li></li>
-                    <li>-- Tan, M., & Eshelman, L. (1988). Using weighted networks to 
-                        represent classification knowledge in noisy domains.  Proceedings 
-                        of the Fifth International Conference on Machine Learning, 121-134,
-                        Ann Arbor, MI. <br> <li></li> -- 4 systems tested: accuracy range was 68%-73.5%</li>
-                    <li>-- Cestnik,G., Konenenko,I, & Bratko,I. (1987). Assistant-86: A
-                        Knowledge-Elicitation Tool for Sophisticated Users.  In I.Bratko
-                        & N.Lavrac (Eds.) Progress in Machine Learning, 31-45, Sigma Press. <br> <li>-- Assistant-86: 78% accuracy</li></li>
-                </li>
-                <li>
-                    <h3>Relevant Information:</h3>
-                    <p>
-                        This is one of three domains provided by the Oncology Institute
-                        that has repeatedly appeared in the machine learning literature.
-                        (See also lymphography and primary-tumor.)
-                   
-                        This data set includes 201 instances of one class and 85 instances of
-                        another class.  The instances are described by 9 attributes, some of
-                        which are linear and some are nominal.
-                    </p>
-                </li>
-                <li>
-                    <h3>Numer of instances:</h3>
-                    <p>286 instances</p>
-                </li>
-                <li>
-                    <h3>Number of attributes</h3>
-                    <p>9 + the class attribute</p>
-                </li>
-                <li>
-                    <h3>Attribute Information:</h3>
-                    <ol>
-                        <li>Class: no-recurrence-events, recurrence-events</li>
-                        <li>age: 10-19, 20-29, 30-39, 40-49, 50-59, 60-69, 70-79, 80-89, 90-99.</li>
-                        <li>menopause: lt40, ge40, premeno.</li>
-                        <li>tumor-size: 0-4, 5-9, 10-14, 15-19, 20-24, 25-29, 30-34, 35-39, 40-44,
-                            45-49, 50-54, 55-59.</li>
-                        <li>inv-nodes: 0-2, 3-5, 6-8, 9-11, 12-14, 15-17, 18-20, 21-23, 24-26,
-                            27-29, 30-32, 33-35, 36-39.</li>
-                        <li>node-caps: yes, no.</li>
-                        <li>deg-malig: 1, 2, 3.</li>
-                        <li>breast: left, right.</li>
-                        <li>breast-quad: left-up, left-low, right-up,	right-low, central.</li>
-                        <li>irradiat:	yes, no.</li>
-                    </ol>
-                </li>
-                <li>
-                    <h3>Missing Attribute Values: (denoted by "?")</h3>
-                    <table>
-                        <th>
-                            <tr>Attribute</tr>
-                            <tr>Number of instances with missing values</tr>
-                        </th>
-                        <tbody>
-                            <td>
-                                <tr>6.</tr>
-                                <tr>9.</tr>
-                            </td>
-                            <td>
-                                <tr>8.</tr>
-                                <tr>1.</tr>
-                            </td>
-                        </tbody>
-                    </table>
-                </li>
-                <li>
-                    <h3>Class Distribution:</h3>
-                    <li>no-recurrence-events: 201 instances</li>
-                    <li>recurrence-events: 85 instances</li>
-                </li>
-
-            </ol>
-            <a href="https://archive.ics.uci.edu/ml/datasets/breast+cancer">Data link</a>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="contenido-redes">
-
-            <div class="redes-tarjetas">
-
-                <div class="tarjeta">
-                    <div class="tarjeta-icono">
-                        <a target="_blank" href="https://github.com/zacksPerez43"><i
-                                class="fa-brands fa-github"></i></a>
-                    </div>
+    <div class="hero">
+        <header class="menu">
+            <nav class="menu-contenedor">
+                <div class="menu-titulo">
+                    <p class="menu__titulo">Cancer de mama</p>
                 </div>
-
-                <div class="tarjeta">
-                    <div class="tarjeta-icono">
-                        <a target="_blank" href="https://www.instagram.com/kotscarlos/"><i
-                                class="fa-brands fa-instagram"></i></a>
-                    </div>
+                <ul class="menu-lista">
+                    <li class="menu__item menu__item--active"><a href="">Inicio</a></li>
+                    <li class="menu__item"><a href="#proyectos">Proyectos</a></li>
+                    <li class="menu__item"><a href="paginas/contacto.html">Contáctame</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <section class="pagina-principal">
+            <div class="principal-grilla">
+                <div class="titulo">
+                    <h1>asd</h1>
                 </div>
-
-                <div class="tarjeta">
-                    <div class="tarjeta-icono">
-                        <a target="_blank" href="https://api.whatsapp.com/send?phone=573113109661"><i
-                                class="fa-brands fa-whatsapp"></i></a>
+                <div class="tarjetas">
+                    <div class="tarjeta">
+                        <div class="tarjeta-titulo">
+                            <h1 class="tarjeta__titulo">Información data</h1>
+                        </div>
+                        <div class="tarjeta-subtitulo">
+                            <h3 class="tarjeta__subtitulo">Información acerca de la data</h3>
+                        </div>
+                        <div class="tarjeta-boton">
+                            <a href="pages/pagina_informativa.html" class="tarjeta__boton">Leer</a>
+                        </div>
                     </div>
-                </div>
-
-                <div class="tarjeta">
-                    <div class="tarjeta-icono">
-                        <a target="_blank" href=""><i class="fa-regular fa-envelope"></i></a>
+    
+                    <div class="tarjeta">
+                        <div class="tarjeta-titulo">
+                            <h1 class="tarjeta__titulo">CRISP-DM</h1>
+                        </div>
+                        <div class="tarjeta-subtitulo">
+                            <h3 class="tarjeta__subtitulo">Información acerca de la metodología CRISP-DM</h3>
+                        </div>
+                        <div class="tarjeta-boton">
+                            <a href="pages/pagina_informativa2.html" class="tarjeta__boton">Leer</a>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="redes-texto">
-                <p class="redes__texto">© Jean's Portfolio - Diseño inspirado en <a data-target="_blank"
-                        href="https://github.com/adityatelange/hugo-PaperMod/">Paper Mod</a></p>
+        <section class="formulario">
+            <div class="formulario-grilla">
+                <div class="informacion">
+                    <h1>Contáctanos</h1>
+                    <p>¿Tienes alguna duda? contácta con la administración. Solo llega el siguiente formulario con tus datos. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit explicabo quisquam voluptate nihil molestias quo iusto laboriosam veritatis consequuntur voluptas illo, ad omnis. Quaerat assumenda molestiae culpa voluptatem corporis sed!</p>
+                </div>
+                <div class="tarjeta">
+                    <div class="tarjeta-titulo">
+                        <h1 class="tarjeta__titulo">Datos</h1>
+                    </div>
+                    <div class="tarjeta-entradas">
+                        <label>Nombre</label>
+                        <input type="text">
+                        <label>Apellido</label>
+                        <input type="text">
+                        <label>Correo</label>
+                        <input type="text">
+                        <label>Descripción</label>
+                        <textarea name="" id="" cols="30" rows="8"></textarea>
+                    </div>
+                    <div class="tarjeta-boton">
+                        <a href="">Enviar</a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </footer>
+        </section>
+    
+        <footer class="footer">
+            <div class="contenido-redes">
+    
+                <div class="redes-tarjetas">
+    
+                    <div class="tarjeta">
+                        <div class="tarjeta-icono">
+                            <a target="_blank" href="https://github.com/zacksPerez43"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+    
+                    <div class="tarjeta">
+                        <div class="tarjeta-icono">
+                            <a target="_blank" href="https://www.instagram.com/kotscarlos/"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+    
+                    <div class="tarjeta">
+                        <div class="tarjeta-icono">
+                            <a target="_blank" href="https://api.whatsapp.com/send?phone=573113109661"><i
+                                    class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+    
+                    <div class="tarjeta">
+                        <div class="tarjeta-icono">
+                            <a target="_blank" href=""><i class="fa-regular fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="redes-texto">
+                    <p class="redes__texto">© Jean's Portfolio - Diseño inspirado en <a data-target="_blank"
+                            href="https://github.com/adityatelange/hugo-PaperMod/">Paper Mod</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
 
     <script src="https://kit.fontawesome.com/1a5bcd4a97.js" crossorigin="anonymous"></script>
 

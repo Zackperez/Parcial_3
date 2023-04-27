@@ -4,7 +4,19 @@ body {
     background-color: var(--blanco);
 }
 
+.hero{
+    display: grid;
+    grid-template-areas: 
+    "menu"
+    "pagina-principal"
+    "formulario"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 70vh auto;
+}
+
 .menu {
+    grid-area: menu;
     display: grid;
     height: 10vh;
 }
@@ -48,16 +60,66 @@ body {
 }
 
 .pagina-principal{
-    margin-top: 10vh;
-    margin-right: 15vw;
-    margin-left: 15vw;
+    grid-area: pagina-principal;
+    display: grid;
+    align-items: center;
+    justify-items: center;
 }
 
-.principal-grilla{
+.principal-grilla .tarjetas{
     display: flex;
-    flex-direction: column;
-    row-gap: 5vh;
+    justify-content: center;
+    column-gap: 2vw;
 }
+
+.principal-grilla .tarjetas .tarjeta{
+    display: grid;
+    grid-template-areas:
+    "titulo"
+    "subtitulo"
+    "boton";
+}
+
+.principal-grilla .tarjetas .tarjeta-titulo{
+    grid-area: titulo;
+}
+
+.principal-grilla .tarjetas .tarjeta-subtitulo{
+    grid-area: subtitulo;
+}
+
+.principal-grilla .tarjetas .tarjeta-boton{
+    grid-area: boton;
+}
+
+.principal-grilla .tarjetas .tarjeta{
+    border: 1px solid black;
+    height: 18vh;
+    width: 30vw;
+    padding: 2vw;
+    background-color: #191919;
+    color: rgb(218, 218, 219);
+    border-radius: 0.5vw;
+}
+
+.principal-grilla .tarjetas .tarjeta .tarjeta__subtitulo{
+    font-weight: 400;
+    font-size: 0.8vw;
+}
+
+.principal-grilla .tarjetas .tarjeta .tarjeta-boton {
+    display: grid;
+    justify-content: end;
+    align-items: center;
+}
+
+
+.principal-grilla .tarjetas .tarjeta .tarjeta-boton a{
+    color:var(--blanco);
+    padding: 0.5vw 3vw;
+    background-color: var(--grisClaro);
+}
+
 
 .principal-grilla .lista{
     display: flex;
@@ -65,9 +127,79 @@ body {
     row-gap: 2vh;
 }
 
+/* CONTENIDO FORMULARIO */
+
+.formulario{
+    grid-area: formulario;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.formulario .formulario-grilla{
+    display: grid;
+    grid-template-areas: "informacion contenido";
+    grid-template-columns: 30vw auto;
+    column-gap: 2vw;
+    border: 1px solid black;
+    height: auto;
+    width: 60vw;
+    padding: 2vw;
+    background-color: #191919;
+    color: rgb(218, 218, 219);
+    border-radius: 0.5vw;
+}
+
+.formulario .informacion{
+    grid-area: informacion;
+    display: grid;
+    height: 20vh;
+}
+
+
+.formulario .formulario-grilla .tarjeta{
+    grid-area: contenido;
+    display: grid;
+    grid-template-areas:
+    "titulo"
+    "entradas"
+    "boton";
+    row-gap: 2vh;
+}
+
+.formulario .formulario-grilla .tarjeta .tarjeta-titulo{
+    grid-area: titulo;
+}
+
+.formulario .formulario-grilla .tarjeta .tarjeta-entradas{
+    grid-area: entradas;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+}
+
+.formulario .formulario-grilla .tarjeta .tarjeta-entradas input{
+    height: 3vh;
+}
+
+.formulario .formulario-grilla .tarjeta .tarjeta-boton{
+    display: grid;
+    justify-content: end;
+    grid-area: boton;
+}
+
+.formulario .formulario-grilla .tarjeta .tarjeta-boton a{
+    color:var(--blanco);
+    padding: 0.5vw 3vw;
+    background-color: var(--grisClaro);
+}
+
+
+
 /* CONTENIDO REDES */
 
 .footer {
+    grid-area: footer;
     display: grid;
     align-items: center;
     height: 20vh;
@@ -109,6 +241,8 @@ body {
 
 @media only screen and (max-width: 600px) {
 
+
+
     /* CONTENIDO MENU */
     .menu {
         height: 20vh;
@@ -135,19 +269,44 @@ body {
     /* CONTENIDO PRINCIPAL */
 
     .principal-grilla {
-        display: grid;
-        justify-content: center;
-        margin-top: 5vh;
-        margin-right: 5vw;
-        margin-left: 5vw;
+        margin-top: 0vh;
+        margin-right: 2vw;
+        margin-left: 2vw;
     }
 
-    
-    .pagina-principal {
-        margin-right: 5vw;
-        margin-left: 5vw;
-        margin-bottom: 5vh;
+    .principal-grilla .tarjetas{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 2vh;
     }
+
+    .principal-grilla .tarjetas .tarjeta{
+        border: 1px solid black;
+        height: 20vh;
+        width: 80vw;
+        padding: 5vw;
+        background-color: #191919;
+        color: rgb(218, 218, 219);
+        border-radius: 2vw;
+    }
+
+    .principal-grilla .tarjetas .tarjeta .tarjeta__titulo{
+        font-size: 6vw;
+    }
+
+    .principal-grilla .tarjetas .tarjeta .tarjeta__subtitulo{
+        font-weight: 400;
+        font-size: 3.4vw;
+    }
+
+    .principal-grilla .tarjetas .tarjeta .tarjeta-boton a{
+        color:var(--blanco);
+        padding: 2vw 10vw;
+        background-color: var(--grisClaro);
+        font-size: 3.4vw;
+    }
+
 
     /* CONTENIDO REDES */
 
@@ -155,7 +314,7 @@ body {
         display: grid;
         align-items: center;
         height: 20vh;
-        background-color: #191919;
+
     }
 
     .contenido-redes {
